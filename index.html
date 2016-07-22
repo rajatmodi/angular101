@@ -4,10 +4,14 @@
 			<title>Angular ....</title>
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	</head>
-	<body ng-init="list = ['one','two','three']">
+	<body ng-init="list = [{name:'Scott' , age:20},
+	{name:'Ross' , age:21},
+	{name:'Ben' , age:22},
+	{name:'Courtney' , age:23}]">
+		<input type="text" ng-model="search">
 		<ul>
-			<li ng-repeat = "item in list">
-				{{item}}
+			<li ng-repeat = "item in list | filter:search">
+				{{item.name}} - {{item.age}}
 			</li>
 		</ul>
 	</body>
