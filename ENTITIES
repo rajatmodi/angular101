@@ -1,0 +1,27 @@
+ENTITIES
+__________________________________________________________________________________________
+
+PipelineContext : Defining pipeline and businness concept configuration .
+Pipeline :  Tells me all the steps and Pipeline Layout, 
+			Entry ? Exit  ? 
+			Evaluator Class?
+			:Mapsof slot to BC
+
+
+Step : business concepts collected on a step. 
+Layout : How the page looks and slots in it for BCs.
+Fragment : helps in collecting business concepts ? 
+
+Business Concepts: piece of information.
+
+
+RELATIONSHIPS
+____________________________________________________________________________________________
+
+Pipeline Definition : Maps Pipeline Context and Pipelines
+					Given Pipeline Context it defines pipeline.
+
+Fragment Configuration : PC ,BC , Weblab and FieldName -> it provides config for rendering and validation  ???? for the field ?? 
+
+
+
